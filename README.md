@@ -93,21 +93,13 @@ should see a web page with the heading "Project Server".
 
 The `client/` directory contains all of your frontend code. The file
 `package.json` has been configured with common React application dependencies,
-include `react-router-dom`. The file also sets the `proxy` field to forward
-requests to `"http://localhost:5555". Feel free to change this to another port-
-just remember to configure your Flask app to use another port as well!
+include `react-router-dom`. 
 
-To download the dependencies for the frontend client, run:
-
-```console
-npm install --prefix client
-```
-
-You can run your React app on [`localhost:3000`](http://localhost:3000) by
+You can run your React app by
 running:
 
 ```sh
-npm start --prefix client
+npm run dev --prefix client
 ```
 
 Check that your the React client displays a default page
