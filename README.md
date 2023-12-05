@@ -6,7 +6,8 @@ a server with python flask and sqlaclchemy
 
 ## Set up
 
-###using WSL
+##using WSL:
+
 cd and open into your clone of phase-4-template dir and
 right click on create-phase4-app.js
 select copy path
@@ -32,17 +33,28 @@ do this anywhere as many times as you want as it is saved globally
 to remove phase4-app run
 
 ```console
-sudo rm /usr/bin/phase4-app
+sudo rm /usr/local/bin/phase4-app
 ```
 
-###not using wsl:
-right click on create-phase4-app.js
+##not using wsl:
+
+right click on create-phase4-app.js 
 select copy path
+```console
+chmod +x <paste/path/to/create-phase4-app.js> 
+```
 navigate in external terminal to where you want to load your new project
-paste the path /path/to/phase-4-template/create-phase-4-app.js create <your-project-name>
-and wait for it to fully load it may take a couple minutes
-do this anywhere as many times as you want as it is saved globally
-you will have to do this every time you want to make a new project
+paste the path
+```console
+/path/to/phase-4-template/create-phase-4-app.js create <your-project-name>
+```
+wait for it to fully load it may take a couple minutes ignore all prompts
+until it says Project <project-name> created successfully!
+you will have to run 
+```console
+/path/to/phase-4-template/create-phase-4-app.js create <your-project-name>
+```
+every time you want to make a new project
 
 ## Setup once created
 
