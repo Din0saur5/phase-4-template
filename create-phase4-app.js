@@ -585,6 +585,8 @@ yarn-error.log*
     `).to('App.jsx')
     shell.rm('index.css')
     shell.rm('main.jsx')
+     
+    shell.cd('..')    
     shell.ShellString(`
         <!doctype html>
         <!--html lang="en" data-bs-theme="dark"-->
@@ -600,9 +602,7 @@ yarn-error.log*
             <script type="module" src="/src/App.jsx"></script>
           </body>
         </html>      
-    `).to('index.html')  
-    shell.cd('..')    
-       
+    `).to('index.html')    
 
 
 
